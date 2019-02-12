@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jax:war">
+    <output-path>$PROJECT_DIR$/../jax/target</output-path>
+    <root id="archive" name="jax.war">
+      <element id="artifact" artifact-name="jax:war exploded" />
+    </root>
+  </artifact>
+</component>
