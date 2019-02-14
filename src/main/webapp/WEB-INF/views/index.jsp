@@ -4,9 +4,9 @@
 <head>
     <meta charset="utf-8">
     <title>Bootstrap</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <%--<script src="./jquery-3.3.1/jquery-3.3.1.min.js"></script>--%>
-    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="${path}/dist/css/bootstrap.min.css">
+    <script src="${path}/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+    <script src="${path}/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
 <!-- <span class="h1">标题1<small>小标题</small></span>
