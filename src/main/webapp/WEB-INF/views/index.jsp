@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=gb2312"%>
-<% pageContext.setAttribute("path",request.getContextPath());%>
+<%@include file="/taglib.jsp"%>
 <html>
 <head>
     <meta charset="utf-8">
