@@ -73,7 +73,7 @@
     </bean>
     <!-- 配置mybatis mapper接口，扫描所有dao -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.charlie.dao"/>
+        <property name="basePackage" value="com.ylkcs.*.*.dao"/>
         <property name="sqlSessionTemplateBeanName" value="sqlSessionTemplate"/>
     </bean>
 
@@ -93,7 +93,7 @@
     </tx:advice>
 
     <aop:config>
-        <aop:pointcut id="serviceMethods" expression="execution(* com.ylkcs.service..*(..))"/>
+        <aop:pointcut id="serviceMethods" expression="execution(* com.ylkcs.*.*.service..*(..))"/>
         <aop:advisor advice-ref="txAdvice" pointcut-ref="serviceMethods"/>
     </aop:config>
 

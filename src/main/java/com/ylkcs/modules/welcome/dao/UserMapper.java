@@ -1,6 +1,6 @@
-package com.ylkcs.dao;
+package com.ylkcs.modules.welcome.dao;
 
-import com.ylkcs.entity.User;
+import com.ylkcs.modules.welcome.entity.User;
 
 public interface UserMapper {
     int insert(User record);

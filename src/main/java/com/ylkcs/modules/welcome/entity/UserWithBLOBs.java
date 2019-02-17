@@ -1,4 +1,4 @@
-package com.ylkcs.entity;
+package com.ylkcs.modules.welcome.entity;
 
 public class UserWithBLOBs extends User {
     private byte[] sslCipher;

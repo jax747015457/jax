@@ -13,12 +13,12 @@
     <context:annotation-config/>
 
     <!-- 自动扫描该包，使SpringMVC认为包下用了@controller注解的类是控制器 -->
-    <context:component-scan base-package="com.ylkcs.controller">
+    <context:component-scan base-package="com.ylkcs.modules.*.controller">
         <context:include-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
     </context:component-scan>
 
     <!--扫描service-->
-    <context:component-scan base-package="com.ylkcs.service"/>
+    <context:component-scan base-package="com.ylkcs.modules.*.service"/>
 
     <!--HandlerMapping 无需配置，SpringMVC可以默认启动-->
 
@@ -27,8 +27,8 @@
     <mvc:resources mapping="/css/**" location="/css/"/>
     <mvc:resources mapping="/js/**" location="/js/"/>
     <mvc:resources mapping="/image/**" location="/image/"/>
-    <mvc:resources mapping="/dist/css/**" location="/css/"/>
-    <mvc:resources mapping="/dist/js/**" location="/js/"/>
+    <mvc:resources mapping="/dist/css/**" location="/dist/css/"/>
+    <mvc:resources mapping="/dist/js/**" location="/dist/js/"/>
     <mvc:resources mapping="/jquery-3.3.1/**" location="/jquery-3.3.1/"/>
 
     <!-- 配置注解驱动 可以将request参数与绑定到controller参数上 -->
